@@ -23,6 +23,28 @@ footer {
   margin: 0 auto;
 }
 
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+main h1 {
+  text-align: center;
+}
+main section {
+  margin-bottom: 24px;
+}
+
+main section:first-of-type {
+  text-align: center;
+}
 
 h1,
 h2,
@@ -60,17 +82,24 @@ p {
     font-size: 16px;
 }
 
+header {
+  background-color: #ffeee2;
+  text-align: center;
+}
 
 header nav ul {
   list-style: none;
   padding: 0;
-  margin: 16px 10px 0;
+  margin: 16px 0 0;
   display: flex;
-  gap: 10px;
+  justify-content: center;
+  gap: 15px;
 }
 
 header nav a {
-  font-weight: 400;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .logo{
@@ -85,30 +114,47 @@ img {
 }
 
 
-#hero,
+#hero {
+  background-color: #fff6fc;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+#hero h1 {
+  margin: 0;
+  padding: 0.67em 0;
+}
+
 #about-hero,
+#project-nav {
+  margin: 10px 0 20px;
+}
+
 #project-main {
   margin-bottom: 24px;
 }
 
-#projects {
-  margin-bottom: 30px;
+#project-preview {
+  margin-bottom: 24px;
 }
+
+#project-preview p {
+  margin-top: 16px;
+}
+
 
 #contact {
   margin-top: 30px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0;
   background-color: #f7f7f7;
+  text-align: center;
 }
-
 
 a {
   color: #3514ec;
   text-decoration: none;
 }
-
-
 
 a:hover,
 a:focus {
@@ -160,8 +206,3 @@ a:active {
   color: #ffffff;
 }
 
-#about-education ul,
-#about-tools ul {
-  padding-left:20px;
-  margin-top: 0;
-}
