@@ -3,22 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>About - Mahadi Hassan Rabbi</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Mahadi Hassan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="author" content="Mahadi Hassan" >
     <meta
       name="description"
       content="About Mahadi Hassan - creative product designer and MBA graduate specializing in UX, product, and visual design."
     >
-     <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    >
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
 
-  <body>
+  <body id="about-page">
     <header>
       <div class="container">
-        <img src="img/logo.png" alt="Mahadi Hassan personal logo"  class="logo">
+        <img
+          src="img/logo.png"
+          alt="Mahadi Hassan personal logo"
+          class="logo"
+        >
 
         <nav>
           <ul>
@@ -31,66 +40,73 @@
     </header>
 
     <main>
-      <div class="container">
+      <div class="container" id="about-main">
         <section>
           <h1>About Me</h1>
           <picture>
             <source
               srcset="img/mh-photo-600x400.png"
-              media="(max-width:767px)">
+              media="(max-width:767px)"
+            >
             <img
               src="img/mh-photo-1200x800.png"
-              alt="Portrait of Mahadi Hassan">
+              alt="Portrait of Mahadi Hassan"
+            >
           </picture>
         </section>
 
-        <div>
-          <section>
-            <h2>My Story</h2>
-            <p>
-              I am a creative professional with several years of experience in
-              brand marketing and visual design. I hold a bachelor's degree in
-              Multimedia Design and an MBA with concentrations in Information
-              Technology Management and Business Administration Management.
-            </p>
-            <p>
-              I am currently completing a Product Design program focused on
-              frontend development—a space where creativity and technology meet.
-              My goal is to craft user-centered digital products and experiences
-              that connect people and technology in meaningful, accessible ways.
-            </p>
-
-            <p>
-              <a
-                href="files/mahadi-hassan-cv.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                  class="button"
-              >
-                View my CV
-              </a>
-            </p>
-          </section>
-        </div>
-
         <section>
-          <h2>Education</h2>
-          <ul>
-            <li>Product Design Program - CareerFoundry</li>
-            <li>Master of Business Administration - Westcliff University</li>
-          </ul>
+          <h2>My Story</h2>
+          <p>
+            I am a creative professional with several years of experience in
+            brand marketing and visual design. I hold a bachelor's degree in
+            Multimedia Design and an MBA with concentrations in Information
+            Technology Management and Business Administration Management.
+          </p>
+          <p>
+            I am currently completing a Product Design program focused on
+            frontend development—a space where creativity and technology meet.
+            My goal is to craft user-centered digital products and experiences
+            that connect people and technology in meaningful, accessible ways.
+          </p>
+          <p>
+            <a
+              href="files/mahadi-hassan-cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button"
+            >
+              View my CV
+            </a>
+          </p>
         </section>
 
-        <section>
-          <h2>Tools</h2>
-          <ul>
-            <li>Adobe Suite</li>
-            <li>Figma</li>
-            <li>Microsoft Word &amp; PowerPoint</li>
-            <li>Canva</li>
-            <li>CapCut</li>
-            <li>WordPress</li>
-          </ul>
+        <section id="skills-tools">
+          <h2>Skills &amp; Tools</h2>
+
+          <div class="row">
+            <section class="column col-md-6 col-lg-6">
+              <h3>Education</h3>
+              <ul>
+                <li>Product Design Program - CareerFoundry</li>
+                <li>
+                  Master of Business Administration - Westcliff University
+                </li>
+              </ul>
+            </section>
+
+            <section class="column col-md-6 col-lg-6">
+              <h3>Tools</h3>
+              <ul>
+                <li>Adobe Suite</li>
+                <li>Figma</li>
+                <li>Microsoft Word &amp; PowerPoint</li>
+                <li>Canva</li>
+                <li>CapCut</li>
+                <li>WordPress</li>
+              </ul>
+            </section>
+          </div>
         </section>
       </div>
     </main>
@@ -108,7 +124,9 @@
         </p>
 
         <div>
-          <a href="mailto:m.rabbi.131@westcliff.edu" class="button contact">Email me</a>
+          <a href="mailto:m.rabbi.131@westcliff.edu" class="button contact">
+            Email me
+          </a>
         </div>
 
         <div>
@@ -117,12 +135,18 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="img/icons/linkedin.png" alt="LinkedIn icon"   class="logo">
+            <img
+              src="img/icons/linkedin.png"
+              alt="LinkedIn icon"
+              class="logo"
+            >
           </a>
         </div>
 
-        <p>Copyright Mahadi Hassan 2025</p>
+        <p>Copyright <span id="year"></span> Mahadi Hassan</p>
       </div>
     </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
