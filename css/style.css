@@ -428,8 +428,10 @@ details {
   }
 
   #site-nav {
-    display: block;
-  }
+  display: block;
+}
+
+
 
   header nav ul {
     flex-direction: row;
