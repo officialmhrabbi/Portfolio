@@ -133,6 +133,7 @@ header .container {
   align-items: center;
   justify-content: space-between;
   padding: 12px 0;
+  flex-wrap: wrap;    
 }
 
 header nav ul {
@@ -388,6 +389,8 @@ details {
 
 #site-nav {
   display: none;
+  width:100%;
+  margin-top:8px;
 }
 
 #site-nav.is-open {
@@ -421,6 +424,7 @@ details {
 
   header .container {
     align-items: center;
+    flex-wrap: nowrap; 
   }
 
   .menu-toggle {
@@ -429,6 +433,8 @@ details {
 
   #site-nav {
   display: block;
+  width: auto;
+   margin-top: 0;
 }
 
 
