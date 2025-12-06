@@ -34,11 +34,7 @@ footer {
   margin-right: auto;
 }
 
-.row {
-  margin: 25px 20px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid #4a4a4a;
-}
+
 
 .column {
   margin-bottom: 16px;
@@ -120,6 +116,12 @@ img {
   height: 40px;
 }
 
+.icon{
+  width:20px;
+  height:20px;
+  margin:auto;
+}
+
 header {
   background-color: #ffffff;
   border-bottom: 1px solid #e0e0e0;
@@ -151,6 +153,19 @@ header nav a {
   font-weight: 700;
 }
 
+.nav-contact {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid #ff7f50;
+  color: #ff7f50;
+}
+
+.nav-contact:hover,
+.nav-contact:focus {
+  background-color: #ff7f50;
+  color: #ffffff;
+}
+
 .menu-toggle {
   display: inline-block;
   border: none;
@@ -161,15 +176,25 @@ header nav a {
   font-size: 14px;
   cursor: pointer;
 }
-
-#hero {
-  background-color: #fff6fc;
-  padding: 20px 10px;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
+.hero-row {
+  display: flex;
+  flex-direction: column;
 }
 
+
+#hero {
+  background: radial-gradient(circle at top left, #fff6fc 0%, #ffffff 55%, #f7f5ff 100%);
+  border-radius: 18px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.04);
+  padding: 20px 16px 24px;
+  margin-bottom: 32px; 
+}
+
+#hero .row {
+  margin: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
 #hero h1 {
   font-size: 26px;
   margin-bottom: 12px;
@@ -181,8 +206,9 @@ header nav a {
   font-size: 20px;
 }
 
-#hero span {
-  display: block;
+#hero h1 span {
+  display: inline;
+  color: #3514ec;
 }
 
 #hero picture {
@@ -192,6 +218,66 @@ header nav a {
 
 #hero p {
   margin: 0;
+}
+.hero-tagline {
+  margin-top: 10px;
+  margin-bottom: 12px;
+  max-width: 34rem;
+}
+
+
+.hero-label {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 999px;
+  border: 1px solid #f0d5cc;
+  background-color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #9b2900;
+  margin-bottom: 10px;
+}
+
+.hero-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  font-weight: 500;
+  color: #9b2900;
+  margin-bottom: 8px;
+}
+
+.hero-tagline {
+  margin-top: 10px;
+  margin-bottom: 12px;
+  max-width: 34rem;
+}
+
+
+.pill-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pill-list li {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background-color: #ffffff;
+  border: 1px solid #f0d5cc;
+  font-size: 13px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 5px;
+  margin-top: 6px;
 }
 
 #about-hero,
@@ -232,6 +318,24 @@ header nav a {
   margin-bottom: 8px;
 }
 
+.project-summary {
+  margin-bottom: 8px;
+}
+
+.project-highlights {
+  margin-top: 0;
+  margin-bottom: 12px;
+  padding-left: 18px;
+}
+
+.project-highlights li {
+  margin-bottom: 4px;
+}
+
+.project-card {
+  padding-bottom: 32px;
+}
+
 [class*="col-"] {
   width: 100%;
 }
@@ -242,16 +346,42 @@ header nav a {
 }
 
 #contact {
-  margin-top: 30px;
-  padding: 20px 0;
-  background-color: #f7f7f7;
+  margin-top: 40px;
+  padding: 40px 0 32px;
+  background: linear-gradient(135deg, #fff6fc, #f7f7f7);
   text-align: center;
 }
+.contact-inner {
+  max-width: 720px;
+}
+
+.contact-tagline {
+  max-width: 32rem;
+  margin: 8px auto 16px;
+}
+
+.contact-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 16px 0 12px;
+}
+
+.contact-social {
+  margin: 12px 0;
+}
+
+.contact-footer {
+  font-size: 14px;
+  color: #666666;
+}
+
 
 footer {
-  background-color: #f7f7f7;
-  padding: 32px 0 24px;
-  margin-top: 40px;
+  background-color: transparent;
+  padding: 0;
+  margin-top: 0;
 }
 
 footer h2 {
@@ -272,8 +402,9 @@ footer .logo {
   background-color: #ff7f50;
   color: #ffffff;
   font-weight: 400;
-  padding: 10px 20px;
+  padding: 10px 10px;
   border-radius: 3px;
+  font-size: 14px;
   text-decoration: none;
   border-bottom: 2px solid #f5f5f5;
   cursor: pointer;
@@ -301,8 +432,15 @@ footer .logo {
   font-size: 14px;
 }
 
-.button.contact:hover,
-.button.contact:focus {
+.button.button-secondary {
+  background-color: #ffffff;
+  color: #ff7f50;
+  border: 1px solid #ff7f50;
+  border-bottom-width: 1px;
+}
+
+.button.button-secondary:hover,
+.button.button-secondary:focus {
   background-color: #ff7f50;
   color: #ffffff;
 }
@@ -339,6 +477,27 @@ footer .logo {
 
 #skills-tools h3 {
   margin-top: 0;
+}
+#skills-summary {
+  padding: 32px 0 16px;
+}
+
+#skills-summary h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+#skills-summary {
+  padding: 32px 0 16px;
+}
+
+#skills-summary h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 details {
@@ -404,12 +563,14 @@ details {
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 12px;
   }
 
   header nav a {
+    display: block;
     color: #4a4a4a;
     font-weight: 400;
+    padding: 10px 0;
   }
 }
 
@@ -462,8 +623,80 @@ details {
   }
 
   #hero {
-    padding: 48px 0 40px;
+    padding: 20px 0 20px;
   }
+  #hero h1 {
+    font-size: 32px;
+  }
+
+  
+.hero-tagline {
+  margin-top: 10px;
+  margin-bottom: 14px;
+  max-width: 34rem;
+}
+
+.hero-actions {
+  display: flex;
+  justify-items: flex-start;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+
+.hero-meta {
+  display: flex;
+  gap: 10px;
+  padding-left: 10px;
+  margin-top: 18px;
+  font-size: 10px;
+}
+
+.hero-meta-item {
+  flex: 0 1 auto;
+  min-width: 140px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: 1px solid #f0d5cc;
+  background-color: rgba(255, 255, 255, 0.92);
+}
+
+.hero-meta-number {
+  display: block;
+  font-weight: 700;
+  font-size: 15px;
+  color: #3514ec;
+  margin-bottom: 2px;
+}
+
+.hero-meta-label {
+  display: block;
+  color: #666666;
+}
+
+.hero-photo-card {
+  position: relative;
+  max-width: 420px;
+  margin: 24px auto 0;
+}
+
+.hero-photo-card picture img {
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+.hero-photo-tag {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  max-width: 230px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background-color: #ffffff;
+  font-size: 11px;
+  line-height: 1.4;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
 }
 
 @media only screen and (min-width: 1024px) {
@@ -477,16 +710,20 @@ details {
 
   #hero {
     text-align: left;
+     padding: 24px 24px 28px;
   }
 
   #hero .row {
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 30px;
   }
 
   #hero picture {
     margin: 0;
+  }
+   .hero-photo-card {
+    margin: 0 0 0 auto;
   }
 
   .col-lg-7 {
