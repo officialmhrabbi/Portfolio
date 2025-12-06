@@ -1,0 +1,9 @@
+module.exports = {
+  extends: "stylelint-config-standard",
+  rules: {
+    "color-hex-case": "lower",
+    "color-hex-length": "short",
+    "block-no-empty": true,
+    "no-duplicate-selectors": true,
+  },
+};

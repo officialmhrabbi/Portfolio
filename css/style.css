@@ -399,7 +399,7 @@ footer .logo {
 
 .button {
   display: inline-block;
-  background-color: #ff7f50;
+  background-color: #cc4c00;
   color: #ffffff;
   font-weight: 400;
   padding: 10px 10px;
@@ -415,6 +415,7 @@ footer .logo {
 .button:focus {
   opacity: 0.85;
   text-decoration: none;
+  background-color: #ffbea6;
 }
 
 .button:active {
@@ -424,7 +425,7 @@ footer .logo {
 
 .button.contact {
   background-color: transparent;
-  color: #ff7f50;
+  color: #e79375;
   border: 2px solid #ff7f50;
   margin-bottom: 8px;
   border-bottom-width: 2px;
